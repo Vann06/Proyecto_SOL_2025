@@ -1,9 +1,6 @@
 CREATE DATABASE IF NOT EXISTS tienda;
 USE tienda;
 
-CREATE DATABASE IF NOT EXISTS tienda;
-USE tienda;
-
 -- 1. Tabla de Roles
 CREATE TABLE roles (
     id INT PRIMARY KEY AUTO_INCREMENT,

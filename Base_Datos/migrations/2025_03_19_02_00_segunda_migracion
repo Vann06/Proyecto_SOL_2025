@@ -1,0 +1,5 @@
+
+-- 1. Eliminar la columna id_departamento de direcciones (ya que se obtiene desde municipios y es redundante)
+ALTER TABLE direcciones DROP FOREIGN KEY direcciones_ibfk_2;
+ALTER TABLE direcciones DROP COLUMN id_departamento;
+ALTER TABLE direcciones ADD CONSTRAINT fk_direccion_municipio FOREIGN KEY (id_municipio) REFERENCES municipios(id);
